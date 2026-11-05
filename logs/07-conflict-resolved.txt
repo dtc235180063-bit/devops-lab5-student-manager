@@ -1,0 +1,26 @@
+# 1. Chinh sua README.md ket hop dong thuan noi dung tu ca 2 nhom:
+$ cat README.md
+# Student Manager
+
+Ung dung quan ly sinh vien — DevOps Lab 5
+**Version 1.0.0** — Phat trien boi Nhom A & Nhom B
+
+# 2. Danh dau file da giai quyet xung dot:
+$ git add README.md
+
+# 3. Hoan tat commit merge giai quyet conflict:
+$ git commit -m "merge: resolve README conflict — combine Team A & B"
+[develop a49ae4c] merge: resolve README conflict — combine Team A & B
+
+# 4. Kiem tra trang thai working tree:
+$ git status
+On branch develop
+Your branch is ahead of 'origin/develop' by 2 commits.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+# 5. Day nhanh develop len remote GitHub:
+$ git push origin develop
+To https://github.com/dtc235180063-bit/devops-lab5-student-manager.git
+   79eec05..a49ae4c  develop -> develop

@@ -1,0 +1,39 @@
+================================================================================
+GitHub Pull Request #2: feat: Search student by name or ID
+Repository : dtc235180063-bit/devops-lab5-student-manager
+Status     : [MERGED] develop <- feature/search-student
+URL        : https://github.com/dtc235180063-bit/devops-lab5-student-manager/pull/2
+Author     : dtc235180063-bit
+Merged at  : 2026-11-05T04:09:17Z
+================================================================================
+
+Description:
+  ## Mo ta
+  Them function search_student cho phep tim kiem sinh vien theo ten hoac ma.
+
+  ## Thay doi
+  - Them search_student() trong src/main.py
+  - Cap nhat main() de goi search_student()
+
+  ## Cach kiem tra
+  python src/main.py
+
+Files Changed (1 file, +31, -2):
+  diff --git a/src/main.py b/src/main.py
+  @@ -30,6 +30,29 @@ def search_student(students: list, keyword: str) -> list:
+   +    results = []
+   +    keyword_lower = keyword.lower()
+   +    for s in students:
+   +        if keyword_lower in s.name.lower() or keyword_lower in s.student_id.lower():
+   +            results.append(s)
+   +    if results:
+   +        print(f"Tim thay {len(results)} sinh vien voi tu khoa '{keyword}':")
+   +        for s in results:
+   +            print(f"  {s}")
+   +    return results
+
+Review Status:
+  Reviewer : Dev A (dtc235180063-bit)
+  Event    : APPROVED (COMMENT)
+  Comment  : "Review boi Dev A: search_student() hoat dong chinh xac, tim kiem case-insensitive rat tot. LGTM!"
+  Merge    : Pull request successfully merged and closed.

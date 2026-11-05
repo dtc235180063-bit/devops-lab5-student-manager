@@ -1,0 +1,19 @@
+$ git branch -a
+  develop
+  feature/add-student
+  feature/search-student
+  feature/update-readme-a
+  feature/update-readme-b
+* main
+  remotes/origin/develop
+  remotes/origin/feature/add-student
+  remotes/origin/feature/search-student
+  remotes/origin/feature/update-readme-a
+  remotes/origin/feature/update-readme-b
+  remotes/origin/main
+
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean

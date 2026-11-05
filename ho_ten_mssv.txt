@@ -1,0 +1,49 @@
+================================================================================
+BÀI BÁO CÁO NỘP BÀI THỰC HÀNH LAB 5
+HỌC PHẦN: VẬN HÀNH VÀ BẢO TRÌ PHẦN MỀM (DEVOPS - 2026)
+================================================================================
+
+1. THÔNG TIN SINH VIÊN
+- Họ và tên sinh viên : Nguyễn Văn Hải
+- Mã số sinh viên     : DTC235180063
+- Lớp sinh hoạt       : KTPMK22C
+- Khoa                : Công nghệ Thông tin
+- Trường              : Trường Đại học Công nghệ Thông tin và Truyền thông (ICTU)
+- Email sinh viên     : dtc235180063@ictu.edu.vn
+
+2. THÔNG TIN BÀI THỰC HÀNH
+- Tên bài thực hành   : Lab 5 — Quản lý Mã nguồn với Git Flow & Code Review trên GitHub
+- Chuẩn đầu ra (CDR)  : CDR 5.2 — Vận dụng nguyên lý quản lý mã nguồn dự án với Git, GitHub
+- GitHub Repository   : https://github.com/dtc235180063-bit/devops-lab5-student-manager
+- Công cụ sử dụng     : Git (v2.51+), Python (v3.11+), GitHub (Branching, PRs, Code Review)
+- Ngày hoàn thành     : 05/11/2026
+
+3. KIẾN TRÚC VÀ QUY TRÌNH GIT FLOW
+- Main Branch         : Chứa mã nguồn ổn định nhất (Production Ready), phiên bản v1.0.0
+- Develop Branch      : Nhánh tích hợp các tính năng chuẩn bị cho bản phát hành
+- Feature Branches    :
+  + feature/add-student       : Phát triển hàm `add_student()` kiểm tra trùng mã sinh viên
+  + feature/search-student    : Phát triển hàm `search_student()` tìm kiếm tên/mã không phân biệt hoa thường
+- Pull Requests & Code Review :
+  + PR #1: develop <- feature/add-student (Dev B review, đóng góp ý kiến & approve; Merged)
+  + PR #2: develop <- feature/search-student (Dev A review, đánh giá chất lượng & approve; Merged)
+- Merge Conflict Simulation & Resolution :
+  + Tạo conflict tại dòng 3 của file README.md giữa 2 nhánh `feature/update-readme-a` và `feature/update-readme-b`
+  + Xuất hiện conflict markers (`<<<<<<< HEAD`, `=======`, `>>>>>>>`)
+  + Xử lý xung đột đồng thuận tích hợp nội dung Nhóm A & Nhóm B
+  + Commit merge `merge: resolve README conflict — combine Team A & B`
+- Release & Merge to Main :
+  + Merge nhánh develop vào main
+  + Cập nhật README.md hoàn chỉnh
+  + Kết quả kiểm thử tự động với verify.sh và verify.ps1 đạt 12/12 PASS (100%)
+
+4. DANH MỤC MINH CHỨNG (SCREENSHOTS)
+- 01-git-log.png           : Đồ thị commit toàn diện (`git log --oneline --graph --all`)
+- 02-git-branch.png        : Danh sách tất cả nhánh local và remote (`git branch -a`)
+- 03-pr-add-student.png    : Pull Request #1 (feature/add-student) đã merged trên GitHub
+- 04-pr-search-student.png : Pull Request #2 (feature/search-student) đã merged trên GitHub
+- 05-code-review.png       : Giao diện Code Review & thảo luận phản biện trên PR
+- 06-merge-conflict.png    : Trạng thái Merge Conflict với conflict markers trong README.md
+- 07-conflict-resolved.png : Trạng thái sau khi giải quyết conflict, commit merge hoàn chỉnh
+- 08-final-output.png      : Kết quả chạy `python src/main.py` đầy đủ tính năng & verify (12/12 PASS)
+================================================================================

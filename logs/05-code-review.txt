@@ -1,0 +1,31 @@
+================================================================================
+GitHub Code Review & Pull Request Approval Log
+Repository: dtc235180063-bit/devops-lab5-student-manager
+================================================================================
+
+[CODE REVIEW: Pull Request #1 - feat: Add student function]
+Reviewer : Dev B (Nguyen Van Hai - DTC235180063)
+Date     : 2026-11-05 11:08:33
+Status   : APPROVED
+Comment  :
+  > "Review boi Dev B: add_student() function logic tot, co kiem tra trung ma sinh vien.
+  > Goi y: Nen doi ten parameter students thanh student_list cho ro nghia hon.
+  > Code chay on dinh, san sang merge vao develop!"
+
+--------------------------------------------------------------------------------
+
+[CODE REVIEW: Pull Request #2 - feat: Search student by name or ID]
+Reviewer : Dev A (Nguyen Van Hai - DTC235180063)
+Date     : 2026-11-05 11:09:14
+Status   : APPROVED
+Comment  :
+  > "Review boi Dev A: search_student() hoat dong chinh xac, tim kiem khong phan biet hoa thuong
+  > (case-insensitive). Code sach se va da tich hop dong bo voi add_student.
+  > LGTM & Approved for integration!"
+
+--------------------------------------------------------------------------------
+Quy trinh Git Flow Code Review:
+  [OK] Feature branches tach tu develop
+  [OK] Pull Request tao ro rang mo ta va huong dan test
+  [OK] Peer Review & trao doi dong gop y kien truc quan
+  [OK] Merge Pull Request vao develop sau khi dat tieu chuan

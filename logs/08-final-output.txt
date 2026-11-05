@@ -1,0 +1,40 @@
+$ python src/main.py
+==================================================
+STUDENT MANAGER — DevOps Lab 5
+==================================================
+Da them sinh vien: Student(id=SV004, name='Pham Thi D', age=22, grade='K19')
+  Student(id=SV001, name='Nguyen Van A', age=20, grade='K20')
+  Student(id=SV002, name='Tran Thi B', age=21, grade='K20')
+  Student(id=SV003, name='Le Van C', age=19, grade='K21')
+  Student(id=SV004, name='Pham Thi D', age=22, grade='K19')
+
+Total: 4 students
+
+--- Tim kiem ---
+Tim thay 2 sinh vien voi tu khoa 'Van':
+  Student(id=SV001, name='Nguyen Van A', age=20, grade='K20')
+  Student(id=SV003, name='Le Van C', age=19, grade='K21')
+
+$ powershell -ExecutionPolicy Bypass -File .\verify.ps1
+===============================================
+  VERIFY - Lab 5 Git Flow and Code Review
+===============================================
+
+[1] Git user.name configured: Nguyen Van Hai ... PASS
+[2] Git user.email configured: dtc235180063@ictu.edu.vn ... PASS
+[3] Current directory is a Git repository ... PASS
+[4] Remote origin: https://github.com/dtc235180063-bit/devops-lab5-student-manager.git ... PASS
+[5] Has >=3 commits (12 total) ... PASS
+[6] Has 'develop' branch ... PASS
+[7] Has >=1 feature branch(es) (8 found) ... PASS
+[8] .gitignore exists ... PASS
+[9] README.md exists (28 lines) ... PASS
+[10] src/ directory exists ... PASS
+[11] Has >=2 Python files (2 found) ... PASS
+[12] src/main.py runs successfully ... PASS
+
+===============================================
+  RESULTS: 12/12 PASS, 0 FAIL
+===============================================
+
+All checks PASS! Git Flow lab completed successfully.

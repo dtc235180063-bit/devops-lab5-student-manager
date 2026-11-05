@@ -1,0 +1,33 @@
+$ git checkout develop
+Switched to branch 'develop'
+
+$ git merge feature/update-readme-b
+Updating 21169c0..79eec05
+Fast-forward
+ README.md | 1 +
+ 1 file changed, 1 insertion(+)
+
+$ git merge feature/update-readme-a
+Auto-merging README.md
+CONFLICT (content): Merge conflict in README.md
+Automatic merge failed; fix conflicts and then commit the result.
+
+$ cat README.md
+# Student Manager
+
+Ung dung quan ly sinh vien — DevOps Lab 5
+<<<<<<< HEAD
+**Version 1.0.0** — Phat trien boi Nhom B
+=======
+**Version 1.0.0** — Phat trien boi Nhom A
+>>>>>>> feature/update-readme-a
+
+$ git status
+On branch develop
+You have unmerged paths.
+  (fix conflicts and run "git commit")
+  (use "git merge --abort" to abort the merge)
+
+Unmerged paths:
+  (use "git add <file>..." to mark resolution)
+        both modified:   README.md

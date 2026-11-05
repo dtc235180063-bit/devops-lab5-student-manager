@@ -1,0 +1,22 @@
+$ git log --oneline --graph --all
+* a179081 (HEAD -> main, origin/main) docs: complete README with project info
+*   a49ae4c (origin/develop, develop) merge: resolve README conflict — combine Team A & B
+|\  
+| * be81a89 (origin/feature/update-readme-a, feature/update-readme-a) docs: update README version info - Team A
+* | 79eec05 (origin/feature/update-readme-b, feature/update-readme-b) docs: update README version info - Team B
+|/  
+*   21169c0 Merge pull request #2 from feature/search-student
+|\  
+| *   c3582ca (origin/feature/search-student, feature/search-student) merge: integrate develop into feature/search-student
+| |\  
+| |/  
+|/|   
+* |   e90d3d5 Merge pull request #1 from feature/add-student
+|\ \  
+| * | 8750a28 (origin/feature/add-student, feature/add-student) feat: add add_student function to main module
+|/ /  
+| * 9313987 feat: add search_student function with keyword search
+|/  
+* 88c9063 feat: add main application entry point
+* 9fa5893 feat: add Student model class
+* 8abfc89 Initial commit: README + .gitignore

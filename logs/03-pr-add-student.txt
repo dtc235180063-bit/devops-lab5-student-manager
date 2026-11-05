@@ -1,0 +1,41 @@
+================================================================================
+GitHub Pull Request #1: feat: Add student function
+Repository : dtc235180063-bit/devops-lab5-student-manager
+Status     : [MERGED] develop <- feature/add-student
+URL        : https://github.com/dtc235180063-bit/devops-lab5-student-manager/pull/1
+Author     : dtc235180063-bit
+Merged at  : 2026-11-05T04:08:37Z
+================================================================================
+
+Description:
+  ## Mo ta
+  Them function add_student cho phep them sinh vien moi vao danh sach, co kiem tra trung ma.
+
+  ## Thay doi
+  - Them add_student() trong src/main.py
+  - Cap nhat main() de goi add_student()
+
+  ## Cach kiem tra
+  python src/main.py
+
+Files Changed (1 file, +28, -2):
+  diff --git a/src/main.py b/src/main.py
+  @@ -15,7 +15,33 @@ def main():
+   +    # Them sinh vien moi
+   +    students = add_student(students, "SV004", "Pham Thi D", 22, "K19")
+   +
+   +def add_student(students: list, student_id: str, name: str, age: int, grade: str) -> list:
+   +    for s in students:
+   +        if s.student_id == student_id:
+   +            print(f"Ma sinh vien {student_id} da ton tai!")
+   +            return students
+   +    new_student = Student(student_id, name, age, grade)
+   +    students.append(new_student)
+   +    print(f"Da them sinh vien: {new_student}")
+   +    return students
+
+Review Status:
+  Reviewer : Dev B (dtc235180063-bit)
+  Event    : APPROVED (COMMENT)
+  Comment  : "Review boi Dev B: add_student() function logic tot, co kiem tra trung ma sinh vien. Approved!"
+  Merge    : Pull request successfully merged and closed.
